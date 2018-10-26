@@ -40,8 +40,7 @@ public class PruebasRecursividadBilbao {
 		}
 	}
 	
-	private static void sacaLista( ArrayList<String> al, 
-			int ind ) {
+	private static void sacaLista( ArrayList<String> al, int ind ) {
 		if (ind==al.size()) {
 			// Nada que hacer (caso base)
 		} else {  // caso recursivo
@@ -101,29 +100,29 @@ public class PruebasRecursividadBilbao {
 	public static void main(String[] args) {
 		
 		// Ejemplo 1
-		//int i = 5;
-		//factorial(i);
+//		int i = 5;
+//		factorial(i);
 		
-		/*
+		
 		//
 		// Ejemplo 2: producto
-		int op1 = 32;
-		int op2 = 35;
-		System.out.println( producto(op1,op2) );
-		*/
+//		int op1 = 32;
+//		int op2 = 35;
+//		System.out.println( producto(op1,op2) );
+		
 		// Ejemplo 3: factorial
-		//System.out.println( factorial(7) );
+//		System.out.println( factorial(7) );
 		// Ejemplo 4: AL de Strings
-		/*
-		ArrayList<String> miALS = new ArrayList<>();
-		miALS.add( "primero" );
-		miALS.add( "2" );
-		miALS.add( "3º" );
-		sacaLista( miALS, 0 );
-		*/
+		
+//		ArrayList<String> miALS = new ArrayList<>();
+//		miALS.add( "primero" );
+//		miALS.add( "2" );
+//		miALS.add( "3º" );
+//		sacaLista( miALS, 0 );
+		
 		
 		//Ejemplo 5: Leer fichero de texto al derecho y al revés
-		/*
+		
 		try {
 			BufferedReader br = new BufferedReader( new
 				InputStreamReader( new FileInputStream( 
@@ -135,13 +134,13 @@ public class PruebasRecursividadBilbao {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		*/
+		
 		
 		//System.out.println( factorial(7) );
 		 
 		// Test de búsqueda binaria en array de enteros
-		int[] v = { 1, 10, 15, 25, 30, 43, 58, 72, 110 };
-		System.out.println( busquedaBinaria(v, 30, 0, v.length-1) );
+//		int[] v = { 1, 10, 15, 25, 30, 43, 58, 72, 110 };
+//		System.out.println( busquedaBinaria(v, 30, 0, v.length-1) );
 		
 	}
 }

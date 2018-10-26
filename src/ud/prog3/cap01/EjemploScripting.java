@@ -8,11 +8,11 @@ public class EjemploScripting {
 	public static void main(String[] args) throws Exception {
 		// Crea un script engine manager
 		ScriptEngineManager factory = new ScriptEngineManager();
-		// Crea un int�rprete JavaScript
+		// Crea un interprete JavaScript
 		ScriptEngine engine = factory.getEngineByName( "JavaScript" );
-		// Eval�a c�digo JavaScript
+		// Evalua codigo JavaScript
 		engine.eval( "print('Hello, World')" );
-		// Eval�a c�digo JavaScript incorrecto
+		// Evalia codigo JavaScript incorrecto
 		try {
 			engine.eval( "print(Hello, World')" );
 		} catch (ScriptException e) {

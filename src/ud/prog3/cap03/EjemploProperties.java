@@ -168,7 +168,7 @@ public class EjemploProperties extends JDialog {
 		misProps = new Properties();
 		try {
 			misProps.loadFromXML( new FileInputStream( nomFic ) );
-		} catch (Exception e) { // Valores por defecto
+		} catch (Exception e) { // Valores por defecto			
 			for (int i=0; i < propiedad.size(); i++) {
 				misProps.setProperty( propiedad.get(i), valorDefecto.get(i) );
 			}

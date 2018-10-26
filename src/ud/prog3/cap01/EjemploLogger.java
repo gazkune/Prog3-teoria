@@ -3,7 +3,7 @@ import java.util.logging.*;
 
 public class EjemploLogger {
 
-	// Obtener un logger d�ndole nombre como la clase
+	// Obtener un logger dandole nombre como la clase
 	private static Logger logger = Logger.getLogger( EjemploLogger.class.getName() );
 	
 	// Niveles de importancia para el log:
@@ -11,15 +11,15 @@ public class EjemploLogger {
 	// Por defecto se muestran en consola de error solo INFO-WARNING-SEVERE
 	
 	public static void main(String argv[]) {
-		logger.setLevel( Level.ALL );  // Cambiando esto se loggean m�s o menos mensajes
+		logger.setLevel( Level.ALL );  // Cambiando esto se loggean mas o menos mensajes
 		// logger.addHandler( consoleHandler );
 		try {
-			// Al logger se le pueden a�adir gestores (handler) que adem�s
+			// Al logger se le pueden añadir gestores (handler) que ademas
 			// de a la consola de error saquen a fichero, xml, pantalla...
 			Handler h = new StreamHandler( System.out, new SimpleFormatter() );
 			h.setLevel( Level.FINEST );
 			logger.addHandler( h );  // Saca todos los errores a out
-			logger.addHandler( new FileHandler( "EjemploLogger.log.xml") ); // Y tambi�n a un xml
+			logger.addHandler( new FileHandler( "EjemploLogger.log.xml") ); // Y tambien a un xml
 		} catch (Exception e) {
 			logger.log( Level.SEVERE, e.toString(), e );
 		}
@@ -31,7 +31,7 @@ public class EjemploLogger {
 				System.out.println( i );
 			}
 		} catch (Exception ex) {
-			// Log un mensaje SEVERE -m�xima prioridad-
+			// Log un mensaje SEVERE -maxima prioridad-
 			logger.log( Level.SEVERE, "error de calculo", ex );
 		}
 		logger.info("Se acabo");

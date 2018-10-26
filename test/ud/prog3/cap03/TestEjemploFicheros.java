@@ -56,17 +56,17 @@ public class TestEjemploFicheros {
 
 	@Test
 	public void testLeerYEscribirABD() {
-		int numInserts = EjemploFicheros.escribirABD( "usuarios.bd", miListaUsuarios );
+		int numInserts = EjemploFicheros.escribirABD( "usuarios.db", miListaUsuarios );
 		assertEquals( miListaUsuarios.size(), numInserts );
 		// Cogemos todos (sin where)
-		ArrayList<Usuario> alu = EjemploFicheros.leerDeBD( "usuarios.bd", "" );
+		ArrayList<Usuario> alu = EjemploFicheros.leerDeBD( "usuarios.db", "" );
 		assertEquals( miListaUsuarios, alu );  // Las listas deben ser iguales
 		// Cogemos solo uno (buzz)
-		alu = EjemploFicheros.leerDeBD( "usuarios.bd", "nick='buzz'" );
+		alu = EjemploFicheros.leerDeBD( "usuarios.db", "nick='buzz'" );
 		assertEquals( 1, alu.size() );  // Las listas deben ser iguales
 		assertEquals( miListaUsuarios.get(0), alu.get(0) );  // Las listas deben ser iguales
 		// Cogemos solo ninguno
-		alu = EjemploFicheros.leerDeBD( "usuarios.bd", "nick='no existo'" );
+		alu = EjemploFicheros.leerDeBD( "usuarios.db", "nick='no existo'" );
 		assertEquals( 0, alu.size() );  // Las listas deben ser iguales
 	}
 }

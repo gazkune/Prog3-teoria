@@ -6,7 +6,7 @@ import java.util.Locale;
 
 public class EjemploLocale {
 
-	// Muestra la informaci�n b�sica del Locale
+	// Muestra la informacion basica del Locale
 	// y la fecha de hoy maquetada en formato largo de esa info local
 	public static void muestraLocale( Locale l ) {
 		System.out.println( "   " + l.getLanguage() + ", " + l.getCountry()
@@ -29,7 +29,7 @@ public class EjemploLocale {
 		System.out.println("Locale italiano:"); 
 		muestraLocale( l );
 		System.out.println();
-		// Definir un locale nuevo: ingl�s en china
+		// Definir un locale nuevo: ingles en china
 		l = new Locale("en", "CN");
 		System.out.println("Locale creado ingles - China:"); 
 		muestraLocale( l );
